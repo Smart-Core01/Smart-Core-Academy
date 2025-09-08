@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SmartCore Academy — Modern Learning</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav-wrap" id="top">
+    <div class="nav-inner">
+      <a class="brand" href="#" id="brand">SmartCore<span class="accent">.</span></a>
+      <nav id="main-nav" class="nav-links" aria-label="Main Navigation">
+        <a href="#courses">Courses</a>
+        <a href="#teachers">Teachers</a>
+        <a href="#events">Events</a>
+        <a href="#enrollments">My Enrollments</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="enrollments-btn" class="btn ghost">My Enrollments</button>
+        <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content container">
+      <h1 class="hero-title">
+        <span class="serif">Learn</span> with <span class="brand-strong">purpose</span>
+      </h1>
+      <div class="typing">
+        <span id="type-target"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-sub">Interactive courses, experienced mentors, and career-ready projects — all in one place.</p>
+
+      <div class="hero-ctas">
+        <a class="btn primary" href="#courses">Explore Courses</a>
+        <button class="btn ghost" id="watch-demo">Watch Demo</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section id="courses" class="section container fade-in">
+    <div class="section-head">
+      <h2>Featured Courses</h2>
+      <p>Hands-on tracks designed to take you from beginner to confident practitioner.</p>
+    </div>
+
+    <div class="courses-grid" id="courses-grid" aria-live="polite">
+      <!-- course cards injected by JS -->
+    </div>
+  </section>
+
+  <!-- TEACHERS -->
+  <section id="teachers" class="section muted fade-in">
+    <div class="container">
+      <div class="section-head">
+        <h2>Meet the Teachers</h2>
+      </div>
+      <div class="teachers-grid" id="teachers-grid">
+        <!-- teacher cards injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS (timeline) -->
+  <section id="events" class="section container fade-in">
+    <div class="section-head">
+      <h2>Upcoming Events</h2>
+      <p>Workshops, bootcamps and community meetups.</p>
+    </div>
+
+    <div class="timeline" id="timeline">
+      <!-- timeline items injected by JS -->
+    </div>
+  </section>
+
+  <!-- ENROLLMENTS -->
+  <section id="enrollments" class="section muted fade-in">
+    <div class="container enrollments-wrap">
+      <div class="section-head">
+        <h2>My Enrollments</h2>
+        <p>Your selected courses (saved locally).</p>
+      </div>
+
+      <div class="enrollments-panel" id="enroll-panel">
+        <div id="enroll-list" class="enroll-list">
+          <p class="muted">No enrollments yet — add a course to get started.</p>
+        </div>
+
+        <div class="enroll-actions">
+          <button id="download-enrollments" class="btn primary">Download CSV</button>
+          <button id="clear-enrollments" class="btn ghost">Clear</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section container fade-in">
+    <div class="section-head">
+      <h2>Contact & Inquiries</h2>
+      <p>Questions? Send us a message and we'll get back to you.</p>
+    </div>
+
+    <div class="contact-grid">
+      <form id="contact-form" class="contact-form" aria-label="Contact form">
+        <input name="name" type="text" placeholder="Full name" required>
+        <input name="email" type="email" placeholder="Email address" required>
+        <textarea name="message" rows="6" placeholder="How can we help?" required></textarea>
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Send Message</button>
+          <p id="contact-status" class="muted small"></p>
+        </div>
+      </form>
+
+      <aside class="contact-info">
+        <div class="info-card">
+          <h4>SmartCore Academy</h4>
+          <p>Contact: admissions@smartcore.academy</p>
+          <p>Phone: +234 803 472 7628</p>
+          <p>Location: Ilorin, Nigeria.</p>
+        </div>
+        <div class="info-card">
+          <h4>Office Hours</h4>
+          <p>Mon — Fri: 9:00 — 18:00</p>
+          <p>Sat: 9:00 — 13:00</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>© 2025 SmartCore Academy</div>
+        <div class="footer-links">
+          <a href="#courses">Courses</a> • <a href="#teachers">Teachers</a> • <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
